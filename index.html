@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AirPort</title>
+</head>
+<body>
+    <section id="section1">
+    <header class="headerTerminal">
+        <div class="logo"><a href="https://hrk.aero/" target="_blank"><img class="logoimg" src="./img/Kharkiv_airport_logo.svg.png" alt="logo"></a></div>
+        <nav class="navBar">
+            <li class="navBarbtn"><a href="#" class="navBar" >Travel</a></li>
+            <li class="navBarbtn"><a href="#" class="navBar" >Facts</a></li>
+            <li class="navBarbtn"><a href="#" class="navBar" >Store(Duty free)</a></li>
+            <li class="navBarbtn"><a href="#" class="navBar" >Info</a></li>
+            <li class="navBarbtn"><a href="#" class="navBar" >B2B</a></li>
+        </nav>
+    </header>
+    <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'Departure')"> <img src="./img/departure_icon.svg" alt="Вылет"></button>
+        <button class="tablinks" onclick="opentab(event, 'Arrival')"> <img src="./img/arrival_icon.svg" alt="Прилёт"></button>
+      </div>
+      <div id="Departure" class="tabcontent">
+        <table class="tableFlight">
+            <tbody>
+                <tr class="headertable">
+                    <th>Рейс</th>
+                    <th>Направление</th>
+                    <th>Время</th>
+                    <th>Статус</th>
+                </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#"><p>TK 1476</p></a></td>
+                <td class="flightDestination"><a href="#"><p>Стамбул</p></a></td>
+                <td class="flightTimes"><a href="#"><p>21:40</p></a></td>
+                <td class="flightStatus"><a href="#"><p>Отправлен</p></a></td>
+            </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#">PQ 4661</a></td>
+                <td class="flightDestination"><a href="#">Анталия</a></td>
+                <td class="flightTimes"><a href="#">02:10</a>
+                    <div class="flightTommorow">04.09.2021</div>
+                <td class="flightStatus"><a href="#">Регистрация(1,2,3,4,5)</a></td>
+            </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#">PS 6285</a></td>
+                <td class="flightDestination"><a href="#">Даламан</a></td>
+                <td class="flightTimes"><a href="#">03:45</a>
+                    <div class="flightTommorow">04.09.2021</div>
+                <td class="flightStatus"><a href="#">По расписанию</a></td>
+            </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#">7W 146</a></td>
+                <td class="flightDestination"><a href="#">Киев</a></td>
+                <td class="flightTimes"><a href="#">07:00</a>
+                    <div class="flightTommorow">04.09.2021</div>
+                </td>
+                <td class="flightStatus"><a href="#">По расписанию</a></td>
+            </tr>
+            
+            </tbody>
+        </table>
+      </div>
+      
+      <div id="Arrival" class="tabcontent">
+        <h3>Arrival</h3>
+        <p>Error 404</p> 
+      </div>
+</section>
+</body>
+<script src="./js/main.js"></script>
+</html>
