@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>AirPort</title>
 </head>
 <body>
-    <section id="section1">
+    <section class="container" id="sectionTablo" >
     <header class="headerTerminal">
         <div class="logo"><a href="https://hrk.aero/" target="_blank"><img class="logoimg" src="./img/Kharkiv_airport_logo.svg.png" alt="logo"></a></div>
         <nav class="navBar">
-            <li class="navBarbtn"><a href="#" class="navBar" >Travel</a></li>
+            <li class="navBarbtn"><a href="#sectionTravel" class="navBar" >Travel</a></li>
             <li class="navBarbtn"><a href="#" class="navBar" >Facts</a></li>
             <li class="navBarbtn"><a href="#" class="navBar" >Store(Duty free)</a></li>
             <li class="navBarbtn"><a href="#" class="navBar" >Info</a></li>
@@ -68,10 +71,107 @@
       </div>
       
       <div id="Arrival" class="tabcontent">
-        <h3>Arrival</h3>
-        <p>Error 404</p> 
+        <table class="tableFlight">
+            <tbody>
+                <tr class="headertable">
+                    <th>Рейс</th>
+                    <th>Направление</th>
+                    <th>Время</th>
+                    <th>Статус</th>
+                </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#"><p>TK 1475</p></a></td>
+                <td class="flightDestination"><a href="#"><p>Стамбул</p></a></td>
+                <td class="flightTimes"><a href="#"><p>21:40</p></a></td>
+                <td class="flightStatus"><a href="#"><p>Отправлен</p></a></td>
+            </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#">PQ 4660</a></td>
+                <td class="flightDestination"><a href="#">Анталия</a></td>
+                <td class="flightTimes"><a href="#">01:30</a>
+                <td class="flightStatus"><a href="#">Прибыл</a></td>
+            </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#">PS 6284</a></td>
+                <td class="flightDestination"><a href="#">Даламан</a></td>
+                <td class="flightTimes"><a href="#">02:10</a>
+                <td class="flightStatus"><a href="#">По расписанию</a></td>
+            </tr>
+                <tr class="flight-itm">
+                <td class="flightNumber"><a href="#">7W 145</a></td>
+                <td class="flightDestination"><a href="#">Киев</a></td>
+                <td class="flightTimes"><a href="#">22:10</a>
+                <td class="flightStatus"><a href="#">По расписанию</a></td>
+            </tr>
+            
+            </tbody>
+        </table>
       </div>
 </section>
+<div class="banner">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 180">
+      <path
+        d="M0 43.418h288c96 0 192 0 288 26.7 96 26.3 192 80.3 288 69.3s192-85 288-117.3c96-31.7 192-21.7 240-16l48 5.3V180H0z" />
+      </svg>
+  </div>
+<section class="sectionTravel" id="sectionTravel">
+    <div class="container">
+        <div class="hedline"><h2>Новости для путишественников</h2></div>
+        <div class="sliderNewsforTravel container">
+            <div class="containerTrevel"><a href="#">
+                <div class="imgContent">
+                <img class="imgContent" src="./img/TravelBlog/Ukraine-Kyev-Travel.jpg" alt="Kyev"></div>
+                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
+                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
+                    mollitia.</div></a>
+                </div>
+            <div class="containerTrevel"><a href="#">
+                <div class="imgContent">
+                <img class="imgContent" src="./img/TravelBlog/turkey-istanbul-Travel.jpg" alt="Istanbul"></div>
+                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
+                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
+                    mollitia.</div></a>
+                </div>
+            <div class="containerTrevel"><a href="#">
+                <div class="imgContent">
+                <img class="imgContent" src="./img/TravelBlog/turkey-Dalaman-Travel.jpg" alt="Dalaman"></div>
+                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
+                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
+                    mollitia.</div></a>
+                </div>
+            <div class="containerTrevel"><a href="#">
+                <div class="imgContent">
+                <img class="imgContent" src="./img/TravelBlog/turkey-Antalya-Travel.jpg" alt="Antalya"></div>
+                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
+                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
+                    mollitia.</div></a>
+                </div>
+            <div class="containerTrevel"><a href="#">
+                <div class="imgContent">
+                <img class="imgContent"  src="./img/TravelBlog/georgia-batumi-travel.jpg" alt="Batumi></div>
+                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
+                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
+                    mollitia.</div></a>
+                </div>
+            <div class="containerTrevel"><a href="#">
+                <div class="imgContent">
+                <img class="imgContent" src="./img/TravelBlog/cuprus-larnaka-travel.jpg" alt="Cuprus"></div>
+                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
+                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
+                    mollitia.</div></a>
+                </div>
+          </div>
+    </div>
+</section>
 </body>
-<script src="./js/main.js"></script>
+<script type="text/javascript" src="./js/slick.jquery.json"></script>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </html>

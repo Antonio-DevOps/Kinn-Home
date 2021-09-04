@@ -10,8 +10,14 @@ a{
     color: orange;
     cursor: pointer;
 }
-#section1{
-    width: $container;
+
+.container {
+  max-width: $container;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto; 
+}
+#sectionTablo{
     height: 100vh;
     background-image: url(../img/ID8A1278-HDR.jpg);
     background-repeat: no-repeat;
@@ -98,8 +104,6 @@ a{
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    height: 500px;
-    width: 500px;
     background-color: aliceblue;
     opacity: 0.9;
     border-radius: 10px;
@@ -110,11 +114,51 @@ a{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-@media (max-width: 1920px){
-  #section1{
-    width: 1920px;
+.flightStatus{
+  height:50px;
 }
-.tabcontent{
-  right: 38%;
+// ===============Trevelblog===============
+.containerTrevel{
+  height: 520px;
+  width: 450px;
 }
+.imgContent, .infoTreve{
+  height: 250px;
+  width: 250px;
 }
+.infoTrevel{
+  margin-top: 1rem;
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+}
+.hedline{
+  margin: 2em;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner svg path {
+  fill: #fff;
+}
+// =================================================================MediaScreens==================================
+// @media (max-width: 1920px){
+//   .container{
+//     max-width: 1920px;
+//   }
+// .tabcontent{
+//   right: 38%;
+// }
+// .banner svg {
+//   bottom: -50px;
+
+// }
+// }
