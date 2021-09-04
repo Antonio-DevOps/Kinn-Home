@@ -181,3 +181,17 @@ a {
 .banner svg path {
   fill: #fff;
 }
+
+@media (max-width: 1920px) {
+  #section1 {
+    width: 1920px;
+  }
+
+  .tabcontent {
+    right: 38%;
+  }
+
+  .container {
+    max-width: 1920px;
+  }
+}
