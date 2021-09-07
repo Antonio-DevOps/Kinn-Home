@@ -149,6 +149,40 @@ a{
 .banner svg path {
   fill: #fff;
 }
+
+// =========================================sectionFactsProgess=========================================
+.FactsOfAirPort{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.progress{
+  display: grid;
+  
+}
+.infoProgress{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+}
+
+.imgprogresa{
+  width: 200px;
+  height: 200px;
+  & :hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+}
 // =================================================================MediaScreens==================================
 // @media (max-width: 1920px){
 //   .container{

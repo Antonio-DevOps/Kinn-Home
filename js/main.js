@@ -13,9 +13,11 @@ function opentab(evt, cityName) {
   }
   // =====================Slider===================
   $('.sliderNewsforTravel').slick({
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows:false,
+    centerPadding: true,
+    infinite: true,
   });
