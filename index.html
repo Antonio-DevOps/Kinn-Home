@@ -7,197 +7,130 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<!-- // Add the new slick-theme.css if you want the default styling -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <title>AirPort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Kinn Home</title>
 </head>
-<body>
-<section class="container" id="sectionTablo" >
-    <header class="headerTerminal">
-        <div class="logo"><a href="https://hrk.aero/" target="_blank"><img class="logoimg" src="./img/Kharkiv_airport_logo.svg.png" alt="logo"></a></div>
-        <nav class="navBar">
-            <li class="navBarbtn"><a href="#sectionTravel" class="navBar" >Travel</a></li>
-            <li class="navBarbtn"><a href="#" class="navBar" >Facts</a></li>
-            <li class="navBarbtn"><a href="#" class="navBar" >Store(Duty free)</a></li>
-            <li class="navBarbtn"><a href="#" class="navBar" >Info</a></li>
-            <li class="navBarbtn"><a href="#" class="navBar" >B2B</a></li>
+<body class="container">
+    <header class="containerNav">
+        <div class="Undernav"></div>
+        <nav class="navBar"
+            <ul class="nav-list">
+                <li class="nav-items nav-itemsFirst"> <a href="#">Shop</a></li>
+                <li class="nav-items"> <a href="#">Style Quiz</a></li>
+                <li class="nav-items"> <a href="#">About Us</a></li>
+                <li class="nav-items"> <a href="#">Stories</a></li>
+            </ul>
+            <div class="logo">
+                <img src="./img/Rectangle.svg" alt="logo" class="logo-img">
+            </div>
+            <div class="user-bar">
+                <a href="#" class="userBtn">
+                    <img src="./img/nav_on_webSite/User.svg" alt="users-icon" class="user-icon">
+                </a>
+                <a href="#" class="userBtn">
+                    <img src="./img/nav_on_webSite/search.svg" alt="search-icon" class="user-icon">
+                </a>
+                <a href="#" class="userBtn">
+                    <img src="./img/nav_on_webSite/basket.svg" alt="basket-icon" class="user-icon">
+                </a>
+            </div>
         </nav>
     </header>
-    <div class="tab">
-        <button class="tablinks" onclick="opentab(event, 'Departure')"> <img src="./img/departure_icon.svg" alt="Вылет"></button>
-        <button class="tablinks" onclick="opentab(event, 'Arrival')"> <img src="./img/arrival_icon.svg" alt="Прилёт"></button>
-      </div>
-      <div id="Departure" class="tabcontent">
-        <table class="tableFlight">
-            <tbody>
-                <tr class="headertable">
-                    <th>Рейс</th>
-                    <th>Направление</th>
-                    <th>Время</th>
-                    <th>Статус</th>
-                </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#"><p>TK 1476</p></a></td>
-                <td class="flightDestination"><a href="#"><p>Стамбул</p></a></td>
-                <td class="flightTimes"><a href="#"><p>21:40</p></a></td>
-                <td class="flightStatus"><a href="#"><p>Отправлен</p></a></td>
-            </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#">PQ 4661</a></td>
-                <td class="flightDestination"><a href="#">Анталия</a></td>
-                <td class="flightTimes"><a href="#">02:10</a>
-                    <div class="flightTommorow">04.09.2021</div>
-                <td class="flightStatus"><a href="#">Регистрация(1,2,3,4,5)</a></td>
-            </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#">PS 6285</a></td>
-                <td class="flightDestination"><a href="#">Даламан</a></td>
-                <td class="flightTimes"><a href="#">03:45</a>
-                    <div class="flightTommorow">04.09.2021</div>
-                <td class="flightStatus"><a href="#">По расписанию</a></td>
-            </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#">7W 146</a></td>
-                <td class="flightDestination"><a href="#">Киев</a></td>
-                <td class="flightTimes"><a href="#">07:00</a>
-                    <div class="flightTommorow">04.09.2021</div>
-                </td>
-                <td class="flightStatus"><a href="#">По расписанию</a></td>
-            </tr>
-            
-            </tbody>
-        </table>
-      </div>
-      
-      <div id="Arrival" class="tabcontent">
-        <table class="tableFlight">
-            <tbody>
-                <tr class="headertable">
-                    <th>Рейс</th>
-                    <th>Направление</th>
-                    <th>Время</th>
-                    <th>Статус</th>
-                </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#"><p>TK 1475</p></a></td>
-                <td class="flightDestination"><a href="#"><p>Стамбул</p></a></td>
-                <td class="flightTimes"><a href="#"><p>21:40</p></a></td>
-                <td class="flightStatus"><a href="#"><p>Отправлен</p></a></td>
-            </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#">PQ 4660</a></td>
-                <td class="flightDestination"><a href="#">Анталия</a></td>
-                <td class="flightTimes"><a href="#">01:30</a>
-                <td class="flightStatus"><a href="#">Прибыл</a></td>
-            </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#">PS 6284</a></td>
-                <td class="flightDestination"><a href="#">Даламан</a></td>
-                <td class="flightTimes"><a href="#">02:10</a>
-                <td class="flightStatus"><a href="#">По расписанию</a></td>
-            </tr>
-                <tr class="flight-itm">
-                <td class="flightNumber"><a href="#">7W 145</a></td>
-                <td class="flightDestination"><a href="#">Киев</a></td>
-                <td class="flightTimes"><a href="#">22:10</a>
-                <td class="flightStatus"><a href="#">По расписанию</a></td>
-            </tr>
-            
-            </tbody>
-        </table>
-      </div>
-</section>
-<div class="banner">
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 180">
-      <path
-        d="M0 43.418h288c96 0 192 0 288 26.7 96 26.3 192 80.3 288 69.3s192-85 288-117.3c96-31.7 192-21.7 240-16l48 5.3V180H0z" />
-      </svg>
-</div>
-<section class="container sectionTravel" id="sectionTravel">
-    <div class="container">
-        <div class="hedline"><h2>Новости для путишественников</h2></div>
-        <div class="sliderNewsforTravel container">
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent" src="./img/TravelBlog/Ukraine-Kyev-Travel.jpg" alt="Kyev"></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent" src="./img/TravelBlog/turkey-istanbul-Travel.jpg" alt="Istanbul"></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent" src="./img/TravelBlog/turkey-Dalaman-Travel.jpg" alt="Dalaman"></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent" src="./img/TravelBlog/turkey-Antalya-Travel.jpg" alt="Antalya"></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent"  src="./img/TravelBlog/georgia-batumi-travel.jpg" alt="Batumi></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent" src="./img/TravelBlog/cuprus-larnaka-travel.jpg" alt="Cuprus"></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent"  src="./img/TravelBlog/baku-travel.jpg" alt="Baku></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
-            <div class="containerTrevel"><a href="#">
-                <div class="imgContent">
-                <img class="imgContent"  src="./img/TravelBlog/Piramida_Heopsa_d_850.jpg" alt="Egypt></div>
-                <div class="infoTrevel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Ea, voluptate. Enim, possimus inventore deserunt aspernatur delectus corporis temporibus ea 
-                    quas praesentium accusamus doloribus molestias officia quis, ipsum doloremque consequatur 
-                    mollitia.</div></a>
-                </div>
+<section class="container containerGeneral" id="section1">
+    <div class="imgsection1">
+        <!-- <img src="./img/Background_section1.svg" alt="Background_section1"> -->
+    <h2 class="text title">Elevate Your Everyday</h2>
+    <h3 class="text titleUnder">ALL COLLECTIONS</h3>
+    <button class="btnShowNow"> <span class="textbtn">SHOP NOW</span></button>
     </div>
 </section>
-<section class="container FactsOfAirPort">
-<div class="progress containerDestinations"><div class="imgprogresa">
-    <img class="imgprogresa" src="./img/Facts-Progress/air-destinations.svg" alt="Destinations"></div>
-    <div class="infoProgress"><h4 class="infotitle">+35</h4><h6>Аэропортов</h6></div></div>
-<div class="progress containerPassengers"><div class="imgprogresa">
-    <img class="imgprogresa" src="./img/Facts-Progress/passenger.svg" alt="Passengers"></div>
-    <div class="infoProgress"><h4 class="infotitle">+1650000</h4><h6>Пассажиров</h6></div></div>
-<div class="progress containerTotalflights"><div class="imgprogresa">
-    <img class="imgprogresa" src="./img/Facts-Progress/TotalFlights.svg" alt="Flights"></div>
-    <div class="infoProgress"><h4 class="infotitle">+2100</h4><h6>Перелётов</h6></div></div>
+<article class="container">
+    <div class="articletext">
+    <h1 class="articletitle">
+        If your happy place is at the dinner table, we totally get that. 
+        That’s why we created products to help you find slow moments in a fast world.
+    </h1>
+</div>
+<div class=" container btnStores">
+    <a href="#" class="btnShop"> <span class="btnShopTitle">Shop All</span><img src="./img/arrow_right.svg" alt="arrow right"></a>
+    <a href="#" class="btnRead"> <span class="btnReadTitle">Read Stories</span><img src="./img/arrow_right.svg" alt="arrow right"></a>
+</div>
+</article>
+<section class=" container store ba-col-12" id="sectionStore">
+<div class="titleStore ba-col-12">Maple Board Collection</div>
+<div class="storeroll ba-col-12 center">
+    <div class="ba-col-4 StorePage center">
+        <div class="item-img center"><img src="./img/ItemStore1.svg" alt="product"></div>
+        <div class="iteme-name center">Maple Board - Short</div>
+        <div class="item-price center">$98.00</div>
+    </div>
+    <div class="ba-col-4 StorePage center">
+        <div class="item-img center"><img src="./img/ItemStore2.svg" alt="product"></div>
+        <div class="iteme-name center">Maple Board - Long</div>
+        <div class="item-price center">$125.00</div>
+    </div>
+    <div class="ba-col-4 StorePage center">
+        <div class="item-img center"><img src="./img/ItemStore3.svg" alt="product"></div>
+        <div class="iteme-name center">Maple Board - Wide</div>
+        <div class="item-price center">$158.00</div>
+    </div>
+</div>
+</section>
+<section class="container ba-col-12 gallery center">
+<div class="galleryBackGround">
+    <div class="center titleGallery"><h3>THE ESSENTIALS</h3></div>
+    <div class="titleCaption"><span class="CaptionText">We believe minimalism means more. More space, more time, more meaningful moments.</span></div>
+</div>
+</section>
+<section class=" container articleblog">
+    <div class="mainblog ba-col-12">
+        <div class="blogImg ba-col-8"><img src="./img/Blogferst.svg" alt="FestPctrBlog"></div>
+        <div class="blogTitle ba-col-4">
+            <span class="blog-textUpper">Our Design Story</span>
+            <div class="center lineBox">
+                <span class="lineUp"></span>
+            </div>
+            <p class="blog-textlower">We believe in thoughtful, intentional living. 
+                So we promise not to clutter your cabinets with one-off pieces you’ll rarely use. 
+                Our collection only includes items you’ll reach for every day. 
+                Because mindful living should be simple, not stressful.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="container articleblogSecond">
+    <div class="mainblog blogSecond ba-col-12">
+        <div class="blogTitle blogTitleSecond ba-col-4">
+            <span class="blog-textUpper">Your Table Your Time</span>
+            <div class="center lineBox">
+                <span class="lineUp"></span>
+            </div>
+            <p class="blog-textlower">
+                Our modern lives keep us in constant motion. 
+                But what keeps us moving isn’t always what moves us. 
+                Our time at the table is our pause button. 
+                Meals can become moments and moments can become memories. 
+                So grab a plate, pull up a seat, and stay a while
+            </p>
+        </div>
+        <div class="blogImgSecond ba-col-7"><img src="./img/BlogSecond.svg" alt="FoodPctrBlog"></div>
+    </div>
+</section>
+<section class="subscribe">
+<div class="generalSubcribe">
+    <div class="subscribeTitleUpper">Sign up to our newsletter</div>
+    <div class="subscribeTitleLower">Receive special offers and first look at new products.</div>
+    <div class="subScribe">
+        <input class="intupSub" type="text" placeholder=" ">
+        <button class=" center btnSub"><span class="btnSub-Title">Subscribe</span></button>
+    </div>
+</div>
 </section>
 </body>
-<script type="text/javascript" src="./js/slick.jquery.json"></script>
-<script type="text/javascript" src="./js/jquery.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript" src="./js/main.js"></script>
 </html>

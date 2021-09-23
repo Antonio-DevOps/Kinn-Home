@@ -1,50 +1,29 @@
-function opentab(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  // =====================Slider===================
-  $('.sliderNewsforTravel').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows:false,
-    centerPadding: true,
-    responsive: [
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 1170,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-  
+// $(function() {
+//     var Accordion = function(el, multiple) {
+//       this.el = el || {};
+//       // more then one submenu open?
+//       this.multiple = multiple || false;
+      
+//       var dropdownlink = this.el.find('.dropdownlink');
+//       dropdownlink.on('click',
+//                       { el: this.el, multiple: this.multiple },
+//                       this.dropdown);
+//     };
+    
+//     Accordion.prototype.dropdown = function(e) {
+//       var $el = e.data.el,
+//           $this = $(this),
+//           //this is the ul.submenuItems
+//           $next = $this.next();
+      
+//       $next.slideToggle();
+//       $this.parent().toggleClass('open');
+      
+//       if(!e.data.multiple) {
+//         //show only one menu at the same time
+//         $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
+//       }
+//     }
+    
+//     var accordion = new Accordion($('.accordion-menu'), false);
+//   })
