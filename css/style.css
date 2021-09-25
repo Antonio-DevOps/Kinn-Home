@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,500;0,600;1,300&display=swap");
-body {
-  background-color: black;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -78,7 +74,7 @@ a {
 
 .nav-items {
   margin-left: 39px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -108,12 +104,11 @@ a {
 }
 
 .nav-items {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
-  /* identical to box height, or 157% */
   letter-spacing: 1.575px;
   text-transform: uppercase;
 }
@@ -185,7 +180,7 @@ a {
   height: 22px;
   left: 1085px;
   top: 448px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -210,12 +205,11 @@ a {
   height: 23px;
   left: calc(50% - 104px/2);
   top: calc(50% - 23px/2 - 0.5px);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  /* identical to box height, or 140% */
   text-align: center;
   letter-spacing: 1.575px;
   text-transform: uppercase;
@@ -237,7 +231,7 @@ a {
 .articletitle {
   width: 1194px;
   height: 243px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 57px;
@@ -270,7 +264,7 @@ a {
 
 .btnShopTitle {
   margin-right: 4px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -304,7 +298,7 @@ a {
 }
 
 .btnReadTitle {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -337,7 +331,7 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 63px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -368,7 +362,7 @@ a {
 
 .iteme-name {
   margin-top: 15px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -378,7 +372,7 @@ a {
 
 .item-price {
   margin-top: 7px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -405,7 +399,7 @@ a {
 
 .titleGallery {
   margin-top: 62px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -425,7 +419,7 @@ a {
 .CaptionText {
   width: 1093px;
   height: 121px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
@@ -459,7 +453,7 @@ a {
 }
 
 .blog-textUpper {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 29px;
@@ -480,7 +474,7 @@ a {
 }
 
 .blog-textlower {
-  font-family: Jost, sans-serif;
+  font-family: "Jost", "sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -535,7 +529,7 @@ a {
 
 .subscribeTitleUpper {
   margin-top: 63px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -545,7 +539,7 @@ a {
 
 .subscribeTitleLower {
   margin-top: 16px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -583,7 +577,7 @@ a {
   background-color: #56593D;
 }
 .btnSub-Title {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -635,7 +629,7 @@ a {
 }
 
 .momentText {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
@@ -668,7 +662,7 @@ footer {
 }
 
 .crumbsFerst {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -677,7 +671,7 @@ footer {
 }
 
 .crumbsSecond {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -688,7 +682,7 @@ footer {
 .footerLogotitleLower {
   width: 256px;
   height: 51px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -697,7 +691,7 @@ footer {
 }
 
 .crumbsFerst {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -705,7 +699,7 @@ footer {
   color: #FFFFEF;
 }
 .crumbsSecond {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -724,7 +718,7 @@ footer {
   margin-top: 15px;
 }
 .footer-BtnNav {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -737,7 +731,7 @@ footer {
   width: 256px;
   height: 51px;
   margin-top: 17px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -746,7 +740,7 @@ footer {
 }
 .footer-navi {
   margin-top: 62px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -762,7 +756,7 @@ footer {
   width: 253px;
   height: 41px;
   margin-top: 16px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -803,7 +797,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

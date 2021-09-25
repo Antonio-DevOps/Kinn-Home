@@ -4,12 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,500;0,600;1,300&display=swap');
 
-// ======================================================================
+// =============================================variables=========================
 $colorBar: aqua;
 $container: 1360px;
-body{
-  background-color: black;
-}
+$colortext: #56593D;
+$colorSection: #FFFFEF;
+$FontGeneral: 'Roboto', sans-serif;
+$FontSecond:  'Jost', 'sans-serif';
+
+
+// ===========================================================================================
 *{
     box-sizing: border-box;
     list-style: none;
@@ -40,7 +44,7 @@ a{
 .Undernav{
   height: 16px;
   width: 1424px;
-  background: #FFFFEF;
+  background: $colorSection;
   margin: 8px;
 }
 .navBar{
@@ -59,19 +63,19 @@ a{
 }
 .nav-items{
   margin-left: 39px;
-  font-family: Roboto;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 1.575px;
   text-transform: uppercase;
-  color: #56593D;
+  color: $colortext;
 }
 .containerGeneral{
   width: 1360px;
   height: 732px;
-  background-color:#FFFFEF;
+  background-color:$colorSection;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,22 +84,13 @@ a{
   margin-top: 44px;
 }
 .nav-items{
-  font-family: Roboto;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
-  /* identical to box height, or 157% */
   letter-spacing: 1.575px;
   text-transform: uppercase;
-// font-family: 'Roboto Mono', monospace;
-// font-size: 16px;
-// font-style: normal;
-// font-weight: 400;
-// line-height: 25px;
-// letter-spacing: 1.5750000476837158px;
-// text-align: left;
-// color: white;
 }
 .nav-itemsFirst{
   margin-left: 64px;
@@ -140,13 +135,13 @@ width: 90px;
   height: 61px;
   left: 825px;
   top: 459px;
-  font-family:'Roboto', sans-serif;
+  font-family:$FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 45px;
   line-height: 60px;
   text-align: right;
-  color: #56593D;
+  color: $colortext;
 }
 .titleUnder{
   position: absolute;
@@ -154,14 +149,14 @@ width: 90px;
   height: 22px;
   left: 1085px;
   top: 448px;
-  font-family: Roboto;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   text-align: right;
   letter-spacing: 1.8px;
-  color: #56593D;
+  color: $colortext;
 }
 .btnShowNow{
   position: absolute;
@@ -169,7 +164,7 @@ width: 90px;
   width: 154px;
   left: 1110px;
   bottom: 64px;
-  background: #56593D;
+  background: $colortext;
 }
 .textbtn{
   position: absolute;
@@ -178,18 +173,15 @@ height: 23px;
 left: calc(50% - 104px/2);
 top: calc(50% - 23px/2 - 0.5px);
 
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
-/* identical to box height, or 140% */
-
 text-align: center;
 letter-spacing: 1.575px;
 text-transform: uppercase;
-
-color: #FFFFEF;
+color: $colorSection;
 }
 // ===================================================Section article=================
 .articletext{
@@ -200,13 +192,13 @@ color: #FFFFEF;
 .articletitle{
   width: 1194px;
   height: 243px;
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 57px;
   line-height: 81px;
   text-align: center;
-  color: #56593D;
+  color: $colortext;
 }
 .btnStores{
   display: flex;
@@ -220,27 +212,27 @@ height: 2px;
   position: absolute;
   width: 94px;
   height: 2px;
-  background: #56593D;
+  background: $colortext;
   bottom: 0;
 }
 }
 .btnShopTitle{
 margin-right: 4px;
-font-family: Roboto, sans-serif;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 26px;
 text-align: center;
 letter-spacing: 1.6px;
-color: #56593D;
+color: $colortext;
 position: relative;
 ::before{
   content: " ";
   position: absolute;
   width: 94px;
   height: 2px;
-  background: #56593D;
+  background: $colortext;
   bottom: 0;
 }
 }
@@ -253,26 +245,26 @@ position: relative;
   position: absolute;
   width: 127px;
   height: 2px;
-  background: #56593D;
+  background: $colortext;
   bottom: 0;
 }
 }
 .btnReadTitle{
-font-family: Roboto, sans-serif;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 26px;
 text-align: center;
 letter-spacing: 1.6px;
-color: #56593D;
+color: $colortext;
 position: relative;
 margin-right: 4px;
 }
 // ========================================sectionStore========================================
 .store{
 height: 738px;
-background: #FFFFEF;
+background: $colorSection;
 margin-top: 90px;
 }
 .titleStore{
@@ -283,12 +275,12 @@ margin-top: 90px;
   align-content: center;
   margin-top: 63px;
 
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
-  color: #56593D;
+  color: $colortext;
 }
 .StorePage{
   flex-direction: column;
@@ -310,16 +302,16 @@ margin-top: 90px;
 }
 .iteme-name{
   margin-top: 15px;
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: #56593D;
+  color: $colortext;
 }
 .item-price{
   margin-top: 7px;
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -334,7 +326,7 @@ color: #717353;
 .gallery{
 height: 732px;
 margin-top: 23px;
-background: #FFFFEF;
+background: $colorSection;
 border-radius: 0px;
 }
 .galleryBackGround{
@@ -345,14 +337,14 @@ margin: 16px;
 }
 .titleGallery{
   margin-top: 62px;
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 22px;
   text-align: center;
   letter-spacing: 1.8px;
-  color: #56593D;
+  color: $colortext;
 }
 .titleCaption{
   margin-top: 11px;
@@ -363,20 +355,20 @@ margin: 16px;
 .CaptionText{
   width: 1093px;
   height: 121px;
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
   line-height: 60px;
   text-align: center;
-  color: #56593D;
+  color: $colortext;
 }
 
 // =============================================Section_Blog================================
 .articleblog{
   height: 746px;
   margin-top: 24px;
-  background: #FFFFEF;
+  background: $colorSection;
 }
 .mainblog{
   display: flex;
@@ -392,13 +384,13 @@ margin: 16px;
   height: 227px;
 }
 .blog-textUpper{
-  font-family: Roboto, sans-serif;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 29px;
   line-height: 39px;
   text-align: center;
-  color: #56593D;
+  color: $colortext;
 }
 .lineBox{
   margin-top: 32px;
@@ -407,21 +399,21 @@ margin: 16px;
   display: block;
   width: 40px;
   height: 1px;
-  border: 1px solid #56593D;
+  border: 1px solid $colortext;
 }
 .blog-textlower{
-  font-family: Jost, sans-serif;
+  font-family: $FontSecond;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #56593D;
+  color: $colortext;
 }
 // ======================Blog-Second==============================
 .articleblogSecond{
   height: 1014px;
   margin-top: 24px;
-  background: #FFFFEF;
+  background: $colorSection;
 }
 .blogTitleSecond{
   margin-left: 121px;
@@ -444,28 +436,28 @@ margin: 16px;
 .generalSubcribe{
   width: 1328px;
   height: 279px;
-  background: #FFFFEF;
+  background: $colorSection;
   display: flex;
   flex-direction: column;
   align-items: center;
   }
 .subscribeTitleUpper{
 margin-top: 63px;
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 28px;
 line-height: 39px;
-color: #56593D;
+color: $colortext;
 }
 .subscribeTitleLower{
   margin-top: 16px;
-  font-family: Roboto;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 29px;
-  color: #56593D;
+  color: $colortext;
 }
 .subScribe{
   margin-top: 68px;
@@ -487,9 +479,9 @@ color: #56593D;
 .btnSub{
 width: 144px;
 height: 22px;
-background-color: #56593D;
+background-color: $colortext;
 &-Title{
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
@@ -497,14 +489,14 @@ line-height: 23px;
 text-align: center;
 letter-spacing: 1.6px;
 text-transform: uppercase;
-color: #FFFFEF;
+color: $colorSection;
 }
 }
 // ===========================================Moment`s_Gallery=======================
 .moments{
   height: 520px;
   margin-top: 40px;
-  background: #FFFFEF;
+  background: $colorSection;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -522,12 +514,12 @@ color: #FFFFEF;
   padding-left: 0;
 }
 .momentText{
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 25px;
 line-height: 32px;
-color: #56593D;
+color: $colortext;
 }
 .galleryMoments-img{
   :hover {
@@ -555,47 +547,47 @@ footer{
 
 
 .crumbsFerst{
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 25px;
-color: #FFFFEF;
+color: $colorSection;
 }
 .crumbsSecond{
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
 line-height: 25px;
-color: #FFFFEF;
+color: $colorSection;
 }
 .footerLogotitleLower{
 width: 256px;
 height: 51px;
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 25px;
-color: #FFFFEF;
+color: $colorSection;
 }
 .crumbs{
   &Ferst{
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 25px;
-color: #FFFFEF;
+color: $colorSection;
 }
   &Second{
-font-family: Roboto;
+font-family: $FontGeneral;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
 line-height: 25px;
-color: #FFFFEF;
+color: $colorSection;
   }
 }
 .footer{
@@ -606,40 +598,40 @@ color: #FFFFEF;
     display: block;
     width: 40px;
     height: 1px;
-    border: 1px solid #FFFFEF;
+    border: 1px solid $colorSection;
     margin-top: 15px;
   }
   &-BtnNav{
-    font-family: Roboto;
+    font-family: $FontGeneral;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 1.575px;
     text-transform: uppercase;
-    color: #FFFFEF;
+    color: $colorSection;
   }
   &-LogotitleLower{
     width: 256px;
     height: 51px;
     margin-top: 17px;
-    font-family: Roboto;
+    font-family: $FontGeneral;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
-    color: #FFFFEF;
+    color: $colorSection;
   }
   &-navi{
     margin-top: 62px;
-    font-family: Roboto;
+    font-family: $FontGeneral;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 1.575px;
     text-transform: uppercase;
-    color: #FFFFEF;
+    color: $colorSection;
   }
   &-navbar{
     padding: 0;
@@ -648,14 +640,14 @@ color: #FFFFEF;
     width: 253px;
     height: 41px;
     margin-top: 16px;
-    font-family: Roboto;
+    font-family: $FontGeneral;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
     letter-spacing: 1.575px;
     text-transform: uppercase;
-    color: #FFFFEF;
+    color: $colorSection;
   }
   &-media{
     display: flex;
@@ -681,14 +673,14 @@ color: #FFFFEF;
   display: flex;
   align-items: center;
   margin-top: 50px;
-  font-family: Roboto;
+  font-family: $FontGeneral;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 1.575px;
   text-transform: uppercase;
-  color: #FFFFEF;
+  color: $colorSection;
 }
 .github{
   width: 30px;
